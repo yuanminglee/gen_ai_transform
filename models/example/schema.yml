@@ -1,0 +1,20 @@
+
+version: 2
+
+models:
+  - name: monthly_sales
+    description: "Testing transformation"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: month
+        description: "The month of the sales"
+        tests:
+          - not_null
+      - name: num_orders
+        description: "The number of orders in the month"
+        tests:
+          - not_null
